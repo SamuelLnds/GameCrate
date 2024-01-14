@@ -1,0 +1,123 @@
+form {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 50px 75px;
+}
+
+form > button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+form > button:active, form > button:focus {
+    transform: scale(98%);
+}
+
+.mdi-check-circle-outline {
+    font-size: 5em;
+    color: rgba(135, 255, 116, 0.9);
+    cursor: pointer;
+}
+
+.base-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.base-info img {
+    width: 128px;
+    height: 128px;
+}
+
+input[type=date] {
+    padding: 0 8px;
+}
+
+input[type=text], input[type=date] {
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    opacity: 0;
+    position: absolute;
+}
+
+label {
+    color: white;
+    margin-bottom: 4px;
+}
+
+.nom-jeu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+textarea {
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 64px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.base-info input {
+    width: 150px;
+}
+
+input {
+    width: 200px;
+    margin-bottom: 1rem;
+}
+
+.info-sec {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    align-items: left;
+}
+
+input[type=checkbox] {
+    transform: scale(150%);
+    margin: 1.5% 0 10%;
+}
+
+#accountform {
+    display: none;
+}
+
+#accountform.checked {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+select {
+    padding: 2%;
+    margin-bottom: 2rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #2f316f91;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.mdi-bookshelf {
+    color: white;
+    font-size: 5em;
+}
+

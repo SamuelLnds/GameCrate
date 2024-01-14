@@ -1,0 +1,30 @@
+.home-nav-button {
+    text-align: center;
+    font-size: 14pt;
+    width: 50%;
+    padding: 2.5% 2%;
+    margin: 20px 0;
+    border-radius: 20px;
+    border: 2px rgb(67, 67, 67) solid;
+    background-color: rgb(229, 229, 229);
+    transition: all 0.05s ease-in;
+    font-weight: 600;
+}
+
+.carrousel-recent {
+    height: 225px;
+    width: auto;
+    margin-bottom: 32px;
+    padding: 2%;
+}
+
+.home-nav-button:hover, .home-nav-button:focus {
+    cursor: pointer;
+    animation: pulse 2s linear infinite;
+}
+
+.home-nav-button:active {
+    animation: none;
+    transform: scale(98%);
+}
+

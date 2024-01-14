@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+@keyframes headerWave {
+    0% { transform: translateX(-0%); }
+    50% { transform: translateX(-90%); }
+    100% { transform: translateX(-0%); }
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(100%);}
+    50% { transform: scale(102.5%);}
+    100% { transform: scale(100%);}
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Jura', sans-serif;
+}
+
+*:visited {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.phone-interface {
+    background: rgba(30,41,56,255);
+    background: linear-gradient(2deg, rgba(30,41,56,255) 0%, rgba(65,58,171,1) 95%); 
+    border-radius: 40px;
+    max-width: 414px;
+    max-height: calc(100%-16px);
+    border: 5px rgb(67, 67, 67) solid;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow-x: hidden;
+    padding-bottom: 2.5rem;
+}
+
+.bg-image-headWave {
+    animation: headerWave 25s linear infinite;
+    position: absolute;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 15px 30px;
+    position: relative;
+}
+
+header img {
+    width: 150px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ligne-separation {
+    background-color: rgb(229, 229, 229);
+    height: 2px;
+    width: 50%;
+    margin: 25px 0;
+}
+
